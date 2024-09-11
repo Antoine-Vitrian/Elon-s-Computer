@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html">Elon's Computers</a>
+    </header>
+    <main>
+        <div id="organizar">
+            <div id="filtro-preco">
+                <p>Filtrar por preço:</p>
+                <input type="number" id="preco-filtro" placeholder="Insira o preço. Ex: 200">
+                <button onclick="filtrarPreco('menor')">Menor que</button>
+                <button onclick="filtrarPreco('maior')">Maior que</button>
+            </div>
+            <div id="order-preco">
+                <p>Ordem:</p>
+                <select name="tipos" id="tipos-ordem">
+                    <option value="">Selecione uma opção</option>
+                    <option value="crescente">Preço (crescente)</option>
+                    <option value="decrescente">Preço (decrescente)</option>
+                    <option value="alfabetica">alfabética</option>
+                    <option value="alfabetica-r">alfabética (reversa)</option>
+                </select>
+                <button onclick="ordenar()">Ordenar</button>
+            </div>
+        </div>
+        <div id="carrinho"></div>
+        <div id="total"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

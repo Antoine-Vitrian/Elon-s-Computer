@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main {
+    background-color: rgb(14, 14, 14);
+    position: relative;
+    top: 10vh;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    height: 10vh;
+    background: rgb(14, 14, 14);
+    color: white;
+    border-bottom: solid 6px rgb(97, 97, 255);
+    font-size: 1.5rem;
+    position: fixed;
+}
+#direita {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+}
+#botoes {
+    display: flex;
+}
+.paginas {
+    padding-inline: 20px;
+    transition: 150ms ease-in;
+}
+.paginas:hover {
+    transform: scale(1.05);
+    color: rgb(97, 97, 255);
+    cursor: pointer;
+    border-bottom: 1px solid rgb(97, 97, 255);
+}
+#notificacao {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(235, 235, 235);
+    border-radius: 50%;
+}
+#notificacao:hover {
+    background: rgb(206, 206, 206);
+}
+#notificacao i {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    display: none;
+}
+#notificacao img {
+    width: 38px;
+}
+#notificacao-log {
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    width: 20vw;
+    height: 0;
+    overflow-y: scroll;
+    overflow-x: clip;
+    background-color: rgb(30, 28, 48);
+}
+.titulo {
+    margin: 10vh 5vw;
+    font-size: 36px;
+    color: white;
+}
+#produtos {
+    display: flex;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: solid 2px rgb(105, 99, 128);
+}
+h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 50px;
+}
+.produto {
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(
+        45deg,
+        rgb(30, 28, 48),
+        rgb(1, 0, 88)
+    );
+    min-height: 150px;
+    max-width: 1000px;
+    border: solid 2px rgba(0, 0, 0, 0.488);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-flow: column;
+    font-size: 24px;
+    padding: 10px 10px 0px 10px;
+    color: white;
+    
+}
+.produto u {
+    text-wrap: pretty;
+    align-self: center;
+}
+.img-container {
+    align-self: center;
+    width: 280px;
+    background: rgba(204, 204, 204, 0.363);
+    border: 1px solid rgba(95, 95, 95, 0.219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    margin-block: 2em;
+}
+.produto img {
+   max-width: 90%;
+   height: 250px;
+}
+button {
+    background-color: rgb(11, 121, 211);
+    color: aliceblue;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 28px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 50ms ease-in;
+}
+button:hover {
+    background-color: rgb(10, 104, 182);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+button:active {
+    transform: scale(0.9);
+}
+.informations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 1em;
+    min-height: 120px;
+    text-wrap: nowrap;
+}
+.informations div {
+    grid-column: 1;
+}
+.informations button {
+    grid-column: 2;
+    grid-row: 2;
+}
+.carrao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1px black;
+    background-color: rgb(235, 235, 235);
+}
+#img-car {
+    width: 25px; 
+    transform: translate(-1px, 2px)
+}
+.p {
+    display: flex;
+    justify-content: space-between;
+}
+.carrao:hover {
+    transform: scale(1.05);
+    background-color: rgb(97, 97, 255);
+
+}
+footer {
+
+}
