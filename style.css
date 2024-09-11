@@ -21,6 +21,7 @@ main {
     border-bottom: solid 6px rgb(97, 97, 255);
     font-size: 1.5rem;
     position: fixed;
+    z-index: 2;
 }
 #direita {
     display: flex;
@@ -52,7 +53,8 @@ main {
     border-radius: 50%;
 }
 #notificacao:hover {
-    background: rgb(206, 206, 206);
+    background: rgb(97, 97, 255);
+    cursor: pointer;
 }
 #notificacao i {
     position: absolute;
@@ -73,9 +75,13 @@ main {
     right: 0;
     width: 20vw;
     height: 0;
+    z-index: 2;
     overflow-y: scroll;
     overflow-x: clip;
     background-color: rgb(30, 28, 48);
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    transition: 250ms ease-in;
 }
 .titulo {
     margin: 10vh 5vw;
@@ -198,4 +204,15 @@ button:active {
 }
 footer {
 
+}
+::-webkit-scrollbar-track {
+    background: rgb(14, 14, 14);
+}
+::-webkit-scrollbar {
+    width: 12px; /* Largura da scrollbar vertical */
+    height: 12px; /* Altura da scrollbar horizontal */
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(97, 97, 255); /* Cor do polegar */
+    border-radius: 10px; /* Arredondamento do polegar */
 }

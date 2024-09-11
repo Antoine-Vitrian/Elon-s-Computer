@@ -1,7 +1,7 @@
 // Adiciona o produto ao carrinho
 function adicionarAoCarrinho(nome, preco) {
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    const notificacoes = document.getElementById('notiicacao-log');
+    const notificacoes = document.getElementById('notificacao-log');
     
     // Verifica se o produto já está no carrinho
     const produtoExistente = carrinho.find(p => p.nome === nome);
@@ -15,26 +15,32 @@ function adicionarAoCarrinho(nome, preco) {
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     const notificacao = document.createElement('p');
     notificacao.className = 'notificacao';
-    notificacao.textcontent = `${nome} foi adicionado ao carrinho!`;
+    notificacao.textContent = `${nome} foi adicionado ao carrinho!`;
     notificacao.style.color = 'white';
+    notificacao.style.padding = '0.8em'
+    notificacao.style.background = 'rgba(98, 0, 255, 0.200)'
+    notificacao.style.outline = 'solid 1px rgb(98, 0, 255)'
     notificacoes.appendChild(notificacao);
 
     atualizarNotificacao(true);
 }
 
 function atualizarNotificacao(state) {
-    let unread = state;
     const notificacao = document.getElementById('notify');
     const notificacaoLog = document.getElementById('notificacao-log');
 
-    if(unread = true) {
+    if(state) {
         notificacao.style.display = 'block';
         return;
-    } else if (unread = false) {
+    } else if (!state) {
         notificacao.style.display = 'none';
-        
-        notificacaoLog.style.height = '20vh';
+        if(notificacaoLog.style.height != '20vh') {
+            notificacaoLog.style.height = '20vh';
+        }else {
+            notificacaoLog.style.height = '0';
+        }
     }
+
 }
 
 // Remove um item do carrinho
