@@ -6,8 +6,7 @@
 }
 main {
     background-color: rgb(14, 14, 14);
-    position: relative;
-    top: 10vh;
+    position: relative; 
 }
 .navbar {
     width: 100%;
@@ -22,6 +21,9 @@ main {
     font-size: 1.5rem;
     position: fixed;
     z-index: 2;
+}
+#header-size {
+    height: 10vh
 }
 #direita {
     display: flex;
@@ -83,12 +85,20 @@ main {
     border-bottom-right-radius: 3em;
     transition: 250ms ease-in;
 }
+.img-a img {
+    height: ;
+    max-width: 100vw;
+    position: absolute;
+}
+.img-b img {
+
+}
 .titulo {
-    margin: 10vh 5vw;
+    margin: 10vh 0vw;
     font-size: 36px;
     color: white;
 }
-#produtos {
+.produtos {
     display: flex;
     max-width: 100vw;
     align-items: center;
@@ -203,7 +213,9 @@ button:active {
 
 }
 footer {
-
+    background: rgb(14, 14, 14);
+    border-top: 1px solid white;
+    height: 50vh;
 }
 ::-webkit-scrollbar-track {
     background: rgb(14, 14, 14);
