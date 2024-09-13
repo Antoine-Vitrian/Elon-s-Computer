@@ -68,6 +68,13 @@ main {
     background: red;
     display: none;
 }
+@keyframes pop {
+    from {
+        transform: scale(2);
+    } to {
+        transform: scale(1);
+    }
+}
 #notificacao img {
     width: 38px;
 }
@@ -203,14 +210,14 @@ button:active {
     width: 25px; 
     transform: translate(-1px, 2px)
 }
-.p {
+.hero {
     display: flex;
     justify-content: space-between;
 }
 .carrao:hover {
     transform: scale(1.05);
     background-color: rgb(97, 97, 255);
-
+    cursor: pointer;
 }
 footer {
     background: rgb(14, 14, 14);

@@ -29,10 +29,15 @@ function atualizarNotificacao(state) {
     const notificacao = document.getElementById('notify');
     const notificacaoLog = document.getElementById('notificacao-log');
 
+    notificacaoLog.addEventListener("mouseenter", () => {
+        notificacao.style.display = 'none';
+    });
+
     if(state) {
         notificacao.style.display = 'block';
+        notificacao.style.animation = 'pop 100ms ease-in-out';
         return;
-    } else if (!state) {
+    }else if (!state) {
         notificacao.style.display = 'none';
         if(notificacaoLog.style.height != '20vh') {
             notificacaoLog.style.height = '20vh';
@@ -41,6 +46,30 @@ function atualizarNotificacao(state) {
         }
     }
 
+}
+
+function ordenar() {
+    const valor = document.getElementById('tipo').value;
+    const containers = Array.from(document.getElementsByClassName('produtos')); // Converte para array
+
+
+    switch(valor) {
+        case 'crescente': // Compara strings
+            containers.forEach((container) => {
+                const produtos = Array.from(container.children);
+                produtos.sort((a, b) => parseInt(a.id) - parseInt(b.id)); // Ordena em ordem crescente
+                produtos.forEach(div => container.appendChild(div));
+            });
+            break;
+    
+        case 'decrescente': // Compara strings
+            containers.forEach((container) => {
+                const produtos = Array.from(container.children);
+                produtos.sort((a, b) => parseInt(b.id) - parseInt(a.id)); // Ordena em ordem decrescente
+                produtos.forEach(div => container.appendChild(div));
+            });
+            break;
+    }
 }
 
 // Remove um item do carrinho
