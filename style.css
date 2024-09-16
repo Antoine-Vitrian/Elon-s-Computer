@@ -68,13 +68,6 @@ main {
     background: red;
     display: none;
 }
-@keyframes pop {
-    from {
-        transform: scale(2);
-    } to {
-        transform: scale(1);
-    }
-}
 #notificacao img {
     width: 38px;
 }
@@ -92,18 +85,47 @@ main {
     border-bottom-right-radius: 3em;
     transition: 250ms ease-in;
 }
-.img-a img {
-    height: ;
-    max-width: 100vw;
-    position: absolute;
-}
-.img-b img {
-
-}
 .titulo {
-    margin: 10vh 0vw;
-    font-size: 36px;
+    margin: 0vh 5vw;
+    width: 90vw;
+    font-size: 48px;
     color: white;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+.juncao_titulo {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.juncao_titulo img {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    z-index: 0;
+}
+#tit {
+    width: 45vw;
+    min-width: 400px;
+    position: relative;
+}
+.titulo img {
+    position: relative;
+    height: 350px;
+    width: 462px;
+}
+.sombra {
+    width: 100%;
+    position: absolute;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.100);
+    z-index: 1;
 }
 .produtos {
     display: flex;
@@ -210,14 +232,14 @@ button:active {
     width: 25px; 
     transform: translate(-1px, 2px)
 }
-.hero {
+.p {
     display: flex;
     justify-content: space-between;
 }
 .carrao:hover {
     transform: scale(1.05);
     background-color: rgb(97, 97, 255);
-    cursor: pointer;
+
 }
 footer {
     background: rgb(14, 14, 14);
