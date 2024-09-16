@@ -86,7 +86,7 @@ function filtrarPreco(tipo) {
     const carrinhoContainer = document.getElementById('carrinho');
 
     if(isNaN(preco)) {
-        carrinhoContainer.innerHTML = '<p>Valor de preço inválido</p>';
+        carrinhoContainer.innerHTML = '<p style="text-align: center; margin-top: 50px; font-size: 1.5rem;">Valor de preço inválido</p>';
         return;
     }
 

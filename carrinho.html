@@ -13,16 +13,20 @@
     </header>
     <div id="header-size"></div>
     <main>
+        <h2>Seu Carrinho</h2>
         <div id="organizar">
             <div id="filtro-preco">
                 <p>Filtrar por preço:</p>
                 <input type="number" id="preco-filtro" placeholder="Insira o preço. Ex: 200">
-                <button onclick="filtrarPreco('menor')">Menor que</button>
-                <button onclick="filtrarPreco('maior')">Maior que</button>
+                <div id="botoes">
+                    <button onclick="filtrarPreco('menor')">Menor que</button>
+                    <button onclick="filtrarPreco('maior')">Maior que</button>
+                </div>
             </div>
+            <div id="total"></div>
+            <button id="finalizar-compra">Finalizar Compra</button>
         </div>
         <div id="carrinho"></div>
-        <div id="total"></div>
     </main>
     <footer>
 

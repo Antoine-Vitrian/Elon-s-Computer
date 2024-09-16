@@ -3,3 +3,80 @@ header a {
     text-decoration: none;
     font-size: 2rem;
 }
+main {
+    height: 90vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-block: 10px;
+    align-items: center;
+    justify-items: center;
+}
+main h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+#organizar {
+    grid-column-start: 2;
+    width: 80%;
+    height: 80%;
+    background: rgba(51, 51, 51, 0.507);
+    border: 1px solid rgb(97, 97, 255);
+    display: flex;
+    flex-flow: column;
+    padding: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+#filtro-preco {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+    font-size: 1.5rem;
+}
+#filtro-preco input {
+    padding: 0.5em;
+    border-radius: 0.4em;
+    border: none;
+}
+#botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#botoes button {
+    font-size: 1.3rem;
+    display: flex;
+}
+#total {
+    font-size: 2rem;
+}
+#finalizar-compra {
+    background-color: slateblue;
+}
+#carrinho {
+    padding-inline: 80px;
+    grid-row-start: 2;
+    height: 60vh;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: black;
+}
+.cart-item {
+    border: 1px solid rgb(97, 97, 255);
+    background: rgba(51, 51, 51, 0.507);
+    padding: 2%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cart-item img {
+    width: 200px;
+}
