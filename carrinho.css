@@ -31,6 +31,9 @@ main h2 {
     justify-content: space-between;
     align-items: center;
 }
+#organizar input {
+    outline: none;
+}
 #filtro-preco {
     display: flex;
     flex-flow: column;
@@ -65,18 +68,22 @@ main h2 {
     height: 60vh;
     width: 100%;
     overflow-y: scroll;
-    background-color: black;
 }
 .cart-item {
     border: 1px solid rgb(97, 97, 255);
     background: rgba(51, 51, 51, 0.507);
     padding: 2%;
     height: 250px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
     align-items: center;
     margin-bottom: 20px;
+    text-wrap: pretty;
 }
 .cart-item img {
     width: 200px;
+}
+.cart-item-info * {
+    margin-block: 0.25em;
 }
