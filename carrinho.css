@@ -43,9 +43,13 @@ main h2 {
     font-size: 1.5rem;
 }
 #filtro-preco input {
+    width: 250px;
     padding: 0.5em;
     border-radius: 0.4em;
+    background: black;
     border: none;
+    font-size: 1.5rem;
+    color: white;
 }
 #botoes {
     width: 100%;
@@ -66,8 +70,9 @@ main h2 {
     padding-inline: 80px;
     grid-row-start: 2;
     height: 60vh;
-    width: 100%;
+    width: 90%;
     overflow-y: scroll;
+    background: rgba(43, 43, 43, 0.164);
 }
 .cart-item {
     border: 1px solid rgb(97, 97, 255);
@@ -86,4 +91,51 @@ main h2 {
 }
 .cart-item-info * {
     margin-block: 0.25em;
+}
+@media(max-width: 1440px) {
+    .cart-item img {
+        width: 100px
+    }
+    .cart-item h2 {
+        font-size: 1.5rem;
+    }
+    #organizar button {
+        font-size: 1.2rem;
+    }
+    #botoes {
+        display: grid;
+        grid-template-columns: 2;
+        row-gap: 5px;
+    }
+    #botoes button:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: fit-content;
+        justify-self: center;
+    }
+}
+@media (max-width: 1024px) {
+    .cart-item {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .cart-item-info {
+        width: 80%;
+    }
+    #organizar {
+        padding: 10px;
+    }
+    #organizar input {
+        font-size: 1rem;
+        width: 164px;
+    }
+}
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+    #organizar {
+        margin-bottom: 50px;
+    }
 }

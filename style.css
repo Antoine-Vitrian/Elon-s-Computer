@@ -135,6 +135,7 @@ main {
     gap: 20px;
     padding: 20px;
     border-bottom: solid 2px rgb(105, 99, 128);
+    overflow-x: scroll;
 }
 h3 {
     color: white;
@@ -160,12 +161,15 @@ h3 {
     font-size: 24px;
     padding: 10px;
     color: white;
-    
+    text-shadow: 1px 1px 4px rgb(97, 97, 255);
 }
 .produto u {
     text-wrap: pretty;
     text-align: center;
     align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
 }
 .img-container {
     align-self: center;
@@ -189,6 +193,7 @@ button {
     border-radius: 10px;
     border: none;
     font-size: 28px;
+    text-wrap: nowrap;
     align-self: flex-end;
     display: flex;
     justify-content: center;
@@ -206,7 +211,7 @@ button:hover {
 button:active {
     transform: scale(0.9);
 }
-.informations {
+#informations {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -214,12 +219,17 @@ button:active {
     min-height: 120px;
     text-wrap: nowrap;
 }
-.informations div {
+#informations div:nth-child(3) {
+    font-weight: bold;
+    font-size: 2rem;
+}
+#informations div {
     grid-column: 1;
 }
-.informations button {
+#informations button {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
+    justify-self: flex-end;
 }
 .carrao {
     display: flex;
