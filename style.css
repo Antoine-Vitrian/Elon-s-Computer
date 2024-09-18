@@ -20,7 +20,7 @@ main {
     border-bottom: solid 6px rgb(97, 97, 255);
     font-size: 1.5rem;
     position: fixed;
-    z-index: 2;
+    z-index: 1000;
 }
 #header-size {
     height: 10vh
@@ -77,12 +77,12 @@ main {
     right: 0;
     width: 20vw;
     height: 0;
-    z-index: 2;
+    z-index: 1000;
     overflow-y: scroll;
     overflow-x: clip;
     background-color: rgb(30, 28, 48);
-    border-bottom-left-radius: 3em;
-    border-bottom-right-radius: 3em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
     transition: 250ms ease-in;
 }
 .titulo {
@@ -152,19 +152,19 @@ h3 {
     );
     min-height: 150px;
     max-width: 1000px;
-    border: solid 2px rgba(0, 0, 0, 0.488);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgb(33, 0, 85);
     display: flex;
     justify-content: space-between;
-    gap: 10px;
     flex-flow: column;
     font-size: 24px;
-    padding: 10px 10px 0px 10px;
+    padding: 10px;
     color: white;
     
 }
 .produto u {
     text-wrap: pretty;
+    text-align: center;
     align-self: center;
 }
 .img-container {
@@ -194,6 +194,9 @@ button {
     justify-content: center;
     align-items: center;
     transition: 50ms ease-in;
+}
+.produto button {
+    aspect-ratio: 1/1;
 }
 button:hover {
     background-color: rgb(10, 104, 182);
@@ -255,5 +258,6 @@ footer {
 }
 ::-webkit-scrollbar-thumb {
     background: rgb(97, 97, 255); /* Cor do polegar */
+    border: 1px solid rgb(52, 52, 255);
     border-radius: 10px; /* Arredondamento do polegar */
 }

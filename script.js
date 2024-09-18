@@ -20,7 +20,7 @@ function adicionarAoCarrinho(nome, preco) {
     notificacao.style.padding = '0.8em'
     notificacao.style.background = 'rgba(98, 0, 255, 0.200)'
     notificacao.style.outline = 'solid 1px rgb(98, 0, 255)'
-    notificacoes.appendChild(notificacao);
+    notificacoes.insertBefore(notificacao, notificacoes.firstChild);
 
     atualizarNotificacao(true);
 }
