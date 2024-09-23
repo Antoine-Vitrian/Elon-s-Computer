@@ -36,6 +36,9 @@ function atualizarNotificacao(state) {
     if(state) {
         notificacao.style.display = 'block';
         notificacao.style.animation = 'pop 100ms ease-in-out';
+        if(notificacaoLog.style.height != '20vh') {
+            notificacaoLog.style.height = '20vh';
+        }
         return;
     }else if (!state) {
         notificacao.style.display = 'none';
