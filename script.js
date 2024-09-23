@@ -169,3 +169,13 @@ function atualizarCarrinho() {
 }
 
 document.addEventListener('DOMContentLoaded', atualizarCarrinho);
+
+function aside() {
+    const aside = document.getElementById('aside');
+
+    if(aside.style.transform === 'translateX(100%)') {
+        aside.style.transform = 'translateX(0)';
+    }else {
+        aside.style.transform = 'translateX(100%)';
+    }
+}
