@@ -204,6 +204,25 @@ aside a:hover {
     inset: 0;
     z-index: 1;
 }
+#ordem-container {
+    display: flex;
+    gap: 10px;
+    margin: 50px;
+}
+#ordem-container select {
+    background: rgb(11, 121, 211);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+#ordem-container select option {
+    background: rgb(66, 66, 255);
+}
+#ordem-container button:hover {
+    transform: scale(1.05);
+}
 h3 {
     color: white;
     font-weight: bold;
