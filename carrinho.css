@@ -4,7 +4,6 @@ header a {
     font-size: 2rem;
 }
 main {
-    height: 90vh;
     color: white;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -22,6 +21,7 @@ main h2 {
 #organizar {
     grid-column-start: 2;
     width: 80%;
+    min-height: fit-content;
     height: 80%;
     background: rgba(51, 51, 51, 0.507);
     border: 1px solid rgb(97, 97, 255);

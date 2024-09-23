@@ -36,14 +36,14 @@ function atualizarNotificacao(state) {
     if(state) {
         notificacao.style.display = 'block';
         notificacao.style.animation = 'pop 100ms ease-in-out';
-        if(notificacaoLog.style.height != '20vh') {
-            notificacaoLog.style.height = '20vh';
+        if(notificacaoLog.style.height != '100px') {
+            notificacaoLog.style.height = '100px';
         }
         return;
     }else if (!state) {
         notificacao.style.display = 'none';
-        if(notificacaoLog.style.height != '20vh') {
-            notificacaoLog.style.height = '20vh';
+        if(notificacaoLog.style.height != '100px') {
+            notificacaoLog.style.height = '100px';
         }else {
             notificacaoLog.style.height = '0';
         }
