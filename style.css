@@ -158,6 +158,7 @@ aside a:hover {
     align-items: center;
     background: url(img/fundo.png) no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .titulo {
     width: 100%;
