@@ -31,7 +31,7 @@ main {
     align-items: center;
     gap: 10px;
 }
-#botoes {
+header #botoes {
     display: flex;
 }
 #hamburger_icon {
@@ -367,7 +367,7 @@ footer {
     }
 }
 @media(max-width: 1024px) {
-    #botoes {
+    header #botoes {
         display: none;
     }
     #hamburger_icon,
