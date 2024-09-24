@@ -375,4 +375,7 @@ footer {
     #hamburger_icon::after {
         display: block;
     }
+    #ordem-container {
+        transform: scale(0.7); 
+    }
 }
