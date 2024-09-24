@@ -51,7 +51,7 @@ main h2 {
     font-size: 1.5rem;
     color: white;
 }
-#botoes {
+#filtro-preco #botoes {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -67,7 +67,8 @@ main h2 {
     background-color: slateblue;
 }
 #carrinho {
-    padding-inline: 80px;
+    padding: 80px;
+    margin: 30px;   
     grid-row-start: 2;
     height: 60vh;
     width: 90%;
