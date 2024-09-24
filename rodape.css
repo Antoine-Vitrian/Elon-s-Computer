@@ -1,0 +1,145 @@
+footer{
+    bottom: 0;
+    background-color: rgb(1,0,88);
+    width:100%;
+    height: fit-content;
+    background-color: #0B0A3A;
+    z-index: 1;
+    padding-bottom: 3vh;
+}
+
+#finalzinho3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+p{
+    color: white;
+    font-size: 2vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    ;
+}
+
+#cinza{
+    color: #f8f8f8d7;
+    margin-top: -1vh;
+}
+#cop{
+    margin-top: 5vh;
+}
+
+#aten{
+    margin-top: 2vh;
+}
+
+#hora{
+    margin-top: -1vh;
+}
+
+#cookies{
+    color: #f8f8f8d7;
+    margin-top: 2vh;
+}
+
+#commerce{
+    width: 17vh;
+    height: auto;
+}
+
+#finalzinho2{
+    background-color: #0B0B0B;
+    width: 100%;
+    height: auto;
+}
+
+#infos{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20vh;
+    margin-left: 4vh;
+}
+
+#certi{
+    color:rgb(97, 97, 255);
+    
+}
+
+#icons{
+    height: 90px;
+    margin-top: 3vh;
+    margin-left: 14vh;
+    display: flex;
+    align-items: center;
+    column-gap: 150px;
+    
+    
+    
+}
+
+#icons img{
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+#finalzinho1{
+    background-color: #0B0B0B;
+    height: 25vh;
+}
+footer h1{
+    color: rgb(97, 97, 255);
+    font-size: 3.3vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#botoes{
+    color: white;
+    
+}
+li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vh;
+}
+li:hover{
+    color: #DB00FF;
+    cursor: pointer; 
+}
+
+#iconspagar{
+    margin-left: 2vh;
+    margin-top: 3vh;
+    display: flex;
+    gap: 3vh;
+}
+
+#nossas_redes{
+    height: 90px;
+    margin-top: 1vh;
+    margin-left: -3vh;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+#branco{
+    position: absolute;
+    background-color: white;
+    height: 4vh;
+    width: 4vh;
+}
+
+#quadrado{
+    background-color: white;
+    width: 380px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: -7vh;
+    padding-left: 9% ;
+}
+
