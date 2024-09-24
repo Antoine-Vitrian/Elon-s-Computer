@@ -6,6 +6,7 @@ footer{
     background-color: #0B0A3A;
     z-index: 1;
     padding-bottom: 3vh;
+    overflow: hidden;
 }
 
 #finalzinho3{
