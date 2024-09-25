@@ -103,7 +103,7 @@ main h2 {
     #organizar button {
         font-size: 1.2rem;
     }
-    #botoes {
+    #organizar #botoes {
         display: grid;
         grid-template-columns: 2;
         row-gap: 5px;
